@@ -4,64 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Índex de Repositoris</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        h1 {
-            text-align: center;
-            color: #0056b3;
-        }
-
-        p {
-            max-width: 800px;
-            margin: 0 auto 20px auto;
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        li {
-            margin: 10px 0;
-            background: #e9ecef;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-            li:hover {
-                background: #d6e0f5;
-            }
-
-        a {
-            text-decoration: none;
-            color: #0056b3;
-        }
-
-            a:hover {
-                text-decoration: underline;
-            }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
 </head>
 <body>
 
     <h1>Índex</h1>
     <p>
-        Ací hi ha un xicotet recopilatori dels meus repositoris (mapes) que vaig fent. Pots trobar tots els meus repositoris a
+        Ací hi ha un xicotet recopilatori dels meus repositoris (principalment mapes) que vaig fent. Pots trobar tots els meus repositoris a
         <a href="https://github.com/paunofu?tab=repositories" target="_blank">GitHub</a>.
     </p>
 
-    <ul>
+    <ul id="repo-list">
         <li><a href="https://paunofu.github.io/Aparcabicis-a-la-Marina" target="_blank">Aparcabicis a la Marina</a></li>
         <li><a href="https://paunofu.github.io/INV/" target="_blank">Institut 'Nazional' de la Vivienda</a></li>
         <li><a href="https://paunofu.github.io/hidrants-amb-leaflet/" target="_blank">Hidrants a la Marina Alta</a></li>
@@ -70,10 +24,15 @@
     </ul>
 
     <p>També he fet un tema de <a href="https://mapcomplete.org/" target="_blank">MapComplete</a> sobre publictat.</p>
-    <ul><li><a href="https://mapcomplete.org/advertising?z=14.2&lat=38.70051458107349&lon=-0.4755631809930492&layer-walls_and_buildings=false" target="_blank">Mapa obert de publicitat</a></li></ul>
-    <iframe src="https://mapcomplete.org/advertising?z=14.2&lat=38.70051458107454&lon=-0.4755631809928218&layer-walls_and_buildings=false"
-            allow="geolocation" width="100%" height="100%" style="min-width: 250px; min-height: 700px"
-            title="Publicitat amb MapComplete">
+    <ul>
+        <li><a href="https://mapcomplete.org/advertising?z=14.2&lat=38.70051458107349&lon=-0.4755631809930492&layer-walls_and_buildings=false" target="_blank">Mapa obert de publicitat</a></li>
+    </ul>
+    
+    <iframe id="map-frame"
+        src="https://mapcomplete.org/advertising?z=14.2&lat=38.70051458107454&lon=-0.4755631809928218&layer-walls_and_buildings=false"
+        allow="geolocation" width="100%" height="100%" style="min-width: 250px; min-height: 700px"
+        title="Publicitat amb MapComplete">
     </iframe>
+
 </body>
 </html>
